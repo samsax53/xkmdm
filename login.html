@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebDiary | Get Started</title>
+        <script src="login.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <section>
+            <div class="login">
+                <h1>Welcome to WebDiary!</h1>
+                <h3>Let's get started!</h3>
+                <hr>
+                <h3>Your name</h3>
+                <input style="color: black; padding: 10px;" type="text" placeholder="Enter your name">
+                <br>
+                <h3>Your diary name</h3>
+                <input style="color: black; padding: 10px;" type="text" placeholder="Enter your diary name">
+                <br>
+                <h3>Create a password</h3>
+                <input style="color: black; padding: 10px;" type="text" placeholder="Enter a strong password">
+                <br>
+                <br>
+                <button class="btn" style="background-color: #0f141a; color: white;" onclick="redirectToMainPage()">Click</button>
+                <div class="circle" id="loaderDiv"></div>
+            </div>
+        </section>
+    </body>
+    <style>
+        body {
+            background: #202731;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        hr {
+            width: 60%;
+        }
+
+        input {
+            width: 60%;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .choice {
+            font-size: 50px;
+        }
+
+        .login {
+            height: 100%;
+            width: 100%;
+            padding-top: 100px;
+        }
+
+        .circle {
+            margin: 70px auto;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            100% {
+            	transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</html>
